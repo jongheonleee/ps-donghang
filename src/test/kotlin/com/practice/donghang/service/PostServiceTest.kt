@@ -127,10 +127,10 @@ class PostServiceTest(
         }
 
         When("작성자가 동일하지 않으면") {
-            val saved = postRepository.save(Post(title = "title", content = "content", createdBy = "yeonuel"))
+            val saved2 = postRepository.save(Post(title = "title", content = "content", createdBy = "yeonuel"))
             then("삭제할 수 없는 게시물입니다. 예외가 발생한다.") {
                 shouldThrow<PostNotDeletableException> {
-                    postService.deletePost(saved.id, "yeonuel2")
+                    postService.deletePost(saved2.id, "yeonuel2")
                 }
             }
         }
