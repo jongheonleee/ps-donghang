@@ -1,8 +1,6 @@
 package com.practice.donghang.controller.dto
 
-import com.practice.donghang.service.dto.PostDetailResponseDto
-
-data class PostDetailResponse(
+data class CommentResponse(
     val id: Long,
     val title: String,
     val content: String,
@@ -11,10 +9,11 @@ data class PostDetailResponse(
     val comments: List<CommentResponse> = emptyList(),
 )
 
-fun PostDetailResponseDto.toResponse() = PostDetailResponse(
+fun PostDetailResponse.toResponse() = PostDetailResponse(
     id = id,
     title = title,
     content = content,
     createdBy = createdBy,
-    createdAt = createdAt
+    createdAt = createdAt,
+    comments = comments
 )
