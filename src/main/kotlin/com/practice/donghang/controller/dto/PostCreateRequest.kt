@@ -8,7 +8,6 @@ data class PostCreateRequest(
     val createdBy: String,
 )
 
-
 fun PostCreateRequest.toDto() = PostCreateRequestDto(
     title = this.title,
     content = this.content,

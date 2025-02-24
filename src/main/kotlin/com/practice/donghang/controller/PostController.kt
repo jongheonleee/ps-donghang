@@ -1,6 +1,11 @@
 package com.practice.donghang.controller
 
-import com.practice.donghang.controller.dto.*
+import com.practice.donghang.controller.dto.PostCreateRequest
+import com.practice.donghang.controller.dto.PostDetailResponse
+import com.practice.donghang.controller.dto.PostSearchRequest
+import com.practice.donghang.controller.dto.PostSummaryResponse
+import com.practice.donghang.controller.dto.PostUpdateRequest
+import com.practice.donghang.controller.dto.toDto
 import com.practice.donghang.service.PostService
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
