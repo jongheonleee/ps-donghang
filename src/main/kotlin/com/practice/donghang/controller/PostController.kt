@@ -53,7 +53,7 @@ class PostController {
 
     @GetMapping("/posts")
     fun getPosts(
-        pageble: Pageable,
+        pageable: Pageable,
         postSearchRequest: PostSearchRequest,
     ): Page<PostSummaryResponse> {
         return Page.empty()
