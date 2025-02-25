@@ -1,23 +1,15 @@
-import { Link } from 'react-router-dom';
+import Header from "componennts/Header";
+import Footer from "componennts/Footer";
+import PostList from "componennts/PostList";
+import Carousel from "componennts/Carousel";
 
 export default function Home() {
     return (
-        <div>
-            <header>
-                <div>
-                    <Link to="/posts/new">글쓰기</Link>
-                    <Link to="/posts/">게시글</Link>
-                    <Link to="/profile">프로필</Link>
-                </div>
-            </header>
-
-            <div className="post-list">Post list</div>
-
-            <footer>
-                <div>menu1</div>
-                <div>menu2</div>
-                <div>menu3</div>
-            </footer>
-        </div>
+        <>
+            <Header />
+            <Carousel />
+            <PostList />
+            <Footer />
+        </>
     );
 }

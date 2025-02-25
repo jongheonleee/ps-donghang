@@ -1,5 +1,15 @@
-export default function PostList() {
+import Header from "componennts/Header";
+import PostList from "componennts/PostList";
+import Footer from "componennts/Footer";
+
+export default function PostPage() {
     return (
-        <h1>Post List Page</h1>
+        <>
+            <Header />
+            <PostList
+                hasNavigation={ false }
+            />
+            <Footer />
+        </>
     )
 }
