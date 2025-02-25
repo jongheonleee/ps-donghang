@@ -14,7 +14,7 @@ import SignupPage from "pages/signup";
 
 export default function Router() {
     // 스프링부트에서 Auth가 인증되었으면 true로 변경
-    const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+    const [isAuthenticated, setIsAuthenticated] = useState<boolean>(true);
 
     return (
         <>
